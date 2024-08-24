@@ -1,0 +1,16 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Jyotika Kishor
+	email = jkishor1802@gmail.com
+[color]
+	ui = auto
+[merge]
+	conflictstyle = diff3
+[alias]
+	s = status
+	cm = commit -m
+	co = checkout
